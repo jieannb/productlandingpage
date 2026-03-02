@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watermelon Kiss</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="Images/logo.jpg" alt="Watermelon Kiss Logo">
+    <h1>Watermelon Kiss</h1>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
+  </nav>
+</header>
+
+<!--heading-->
+<section id="home" class="hero">
+  <h2>A kiss of color. A splash of glow.</h2>
+  <p>Fresh, girly beauty inspired by summer 🍉</p>
+  <button class="cta-btn">Shop Now</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Watermelon Kiss</h2>
+ <p>
+    Watermelon Kiss is a fresh and playful beauty brand inspired by the sweetness, color, and glow of summer. 
+    We believe that beauty should feel effortless, joyful, and confidence-boosting — just like a warm sunny day. 
+    Our products are carefully curated to bring out your natural radiance while adding a juicy pop of color 
+    to your everyday look.
+  </p>
+
+  <p>
+    From dewy foundations and soft blushes to vibrant lip shades and glowing setting sprays, 
+    every item in our collection is designed to help you feel fresh, feminine, and fearless. 
+    Whether you're going for a soft everyday glow or a flirty glam moment, Watermelon Kiss 
+    celebrates beauty in all its forms.
+  </p>
+
+  <p>
+    More than just makeup, Watermelon Kiss is about self-expression, self-love, and embracing 
+    your unique charm. We want every customer to feel confident in their own skin — because 
+    true beauty shines brightest when you feel good inside and out.
+  </p>
+
+  <p>
+    At Watermelon Kiss, it’s not just about looking beautiful — it’s about feeling beautiful, 
+    empowered, and unapologetically YOU.
+  </p>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <h2>Our Products</h2>
+
+  <div class="product-grid">
+
+    <div class="product">
+      <span class="category">Lipstick</span>
+      <img src="Images/lipstick.jpg" alt="Watermelon Sugar">
+      <h3>Watermelon Sugar</h3>
+      <div class="rating">★★★★★</div>
+      <p>₱300</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span class="category">Foundation</span>
+      <img src="Images/foundation.jpg" alt="Dewy Fresh Foundation">
+      <h3>Dewy Fresh Foundation</h3>
+      <div class="rating">★★★★☆</div>
+      <p>₱499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span class="category">Eyeshadow</span>
+      <img src="Images/eyeshadow.jpg" alt="Watermelon Pop Palette">
+      <h3>Watermelon Pop Palette</h3>
+      <div class="rating">★★★★★</div>
+      <p>₱400</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span class="category">Blush</span>
+      <img src="Images/blush.jpg" alt="Juicy Cheeks Blush">
+      <h3>Juicy Cheeks Blush</h3>
+      <div class="rating">★★★★☆</div>
+      <p>₱349</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span class="category">Setting Spray</span>
+      <img src="Images/settingspray.jpg" alt="Dew Splash Melon">
+      <h3>Dew Splash Melon</h3>
+      <div class="rating">★★★★★</div>
+      <p>₱299</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span class="category">Lip Gloss</span>
+      <img src="Images/gloss.jpg" alt="Melon Drip Gloss">
+      <h3>Melon Drip Gloss</h3>
+      <div class="rating">★★★★★</div>
+      <p>₱249</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span class="category">Toner</span>
+      <img src="Images/toner.jpg" alt="Summer Skin Toner">
+      <h3>Summer Skin Toner</h3>
+      <div class="rating">★★★★☆</div>
+      <p>₱399</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span class="category">Sunscreen</span>
+      <img src="Images/sunscreen.jpg" alt="Juicy Sun Shield SPF 50">
+      <h3>Juicy Sun Shield SPF 50</h3>
+      <div class="rating">★★★★★</div>
+      <p>₱499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+  <span class="category">Lotion</span>
+  <img src="Images/lotion.jpg" alt="Glow Drizzle Lotion">
+  <h3>Glow Drizzle</h3>
+  <div class="rating">★★★★☆</div>
+  <p>₱399</p>
+  <button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="product">
+  <span class="category">Facial Wash</span>
+  <img src="Images/facialwash.jpg" alt="Melon Bloom Foam">
+  <h3>Melon Bloom Foam</h3>
+  <div class="rating">★★★★☆</div>
+  <p>₱299</p>
+  <button onclick="addToCart()">Add to Cart</button>
+</div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+
+  <div class="contact-box">
+    <p><i class="fas fa-envelope"></i> jieannbriones091@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Baguio City</p>
+    <p><i class="fas fa-phone"></i> 09123456789</p>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Watermelon Kiss. All Rights Reserved.</p>
+</footer>
+
+<script>
+  let cartCount = 0;
+  function addToCart() {
+    cartCount++;
+    document.getElementById("cart-count").innerText = cartCount;
+  }
+</script>
+
+</body>
+</html>
