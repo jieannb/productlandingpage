@@ -11,6 +11,10 @@ body {
   line-height: 1.6;
 }
 
+#about p{
+margin-bottom:15px;
+}
+
 /* HEADER */
 header {
   background-color: #ffd6df;
