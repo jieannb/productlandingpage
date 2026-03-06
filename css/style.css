@@ -238,3 +238,8 @@ footer {
 margin-bottom:20px;
 line-height:1.8;
 }
+
+.about-text{
+max-width:800px;
+margin:auto;
+}
